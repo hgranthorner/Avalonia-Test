@@ -1,6 +1,7 @@
 using Avalonia;
 using Avalonia.Controls.ApplicationLifetimes;
 using Avalonia.Markup.Xaml;
+using MyApp.Services;
 using MyApp.ViewModels;
 using MyApp.Views;
 
@@ -19,7 +20,7 @@ namespace MyApp
             {
                 desktop.MainWindow = new MainWindow
                 {
-                    DataContext = new MainWindowViewModel(),
+                    DataContext = new MainWindowViewModel(TodoService.GetToDos()),
                 };
             }
 

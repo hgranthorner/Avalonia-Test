@@ -1,13 +1,11 @@
-﻿using System;
 using Avalonia.Controls;
-using Avalonia.Interactivity;
 using Avalonia.Markup.Xaml;
 
 namespace MyApp.Views
 {
-    public class TodoListView : UserControl
+    public class AddItemView : UserControl
     {
-        public TodoListView()
+        public AddItemView()
         {
             InitializeComponent();
         }
